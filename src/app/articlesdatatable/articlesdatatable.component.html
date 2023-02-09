@@ -1,0 +1,29 @@
+<div >
+    <div class="headers">
+    <h2 class="table-title">Gestion des articles</h2>
+    </div>
+    <table datatable class="table table-hover table-bordered" *ngIf="articles">
+    <thead>
+    <tr>
+    <th>Référence</th>
+    <th>Désignation</th>
+    <th>Prix</th>
+    <th>Marque</th>
+    <th>Quantité</th>
+    <th>Image</th>
+    <th>actions</th>
+    </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor ="let art of articles">
+    <td>{{art.reference}}</td>
+    <td>{{art.designation}}</td>
+    <td>{{art.prix}} DT</td>
+    <td>{{art.marque}}</td>
+    <td>{{art.qtestock}}</td>
+    <td><img src={{art.imageart}} alt="" width="100" height="50"/></td>
+    <td>actions </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>

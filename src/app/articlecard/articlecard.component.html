@@ -1,0 +1,12 @@
+<div class="row" >
+    <div class="col-md-2" *ngFor="let a of articles" >
+    <div class="card" style="width: 14rem;">
+    <img src={{a.imageart}} class="card-img-top" alt="image" style="width: 10rem;" >
+    <div class="card-body">
+    <h5 class="card-title">{{a.reference}}</h5>
+    <p class="card-text">Prix : {{a.prix}}</p>
+    <a href="#" class="btn btn-primary">Acheter</a>
+    </div>
+    </div>
+    </div>
+    </div>

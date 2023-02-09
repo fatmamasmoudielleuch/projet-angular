@@ -1,0 +1,58 @@
+
+<div >
+    <div class="headers">
+    <h2 class="table-title">Gestion des catégories</h2>
+    <button class="btn btn-success" (click)="openForm()">Nouveau</button>
+    </div>
+    <table class="table">
+    <thead>
+    <tr>
+    <th>Nom catégorie</th>
+    <th>Image</th>
+    <th></th>
+    <th></th>
+    </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor ="let cat of categories">
+    <td>{{cat.nomcategorie}}</td>
+    <td><img src={{cat.imagecategorie}} alt="" width="130"
+    height="70"/></td>
+    <td>
+    <button class="btn btn-outline-primary"(click)="EditForm(cat)">Edit</button>
+    </td>
+    
+    <td>
+    <button class="btn btn-outline-danger"(click)="DeleteCat(cat._id)">Delete</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div>
+    <div class="form-wrapper" *ngIf="showForm">
+        <div class="mobile-form">        
+    <h2 class="text-center text-info">{{formHeader}}</h2>
+    <div class="group">
+    <label for="">Nom categorie</label>
+    <input type="text" class="form-control" [(ngModel)]="nomcategorie"
+    name="nomcategorie">
+    </div>
+    <div class="group">
+    <label for="">Image</label>
+    <input type="text" class="form-control" [(ngModel)]="imagecategorie"
+    name="imagecategorie" >
+    <div *ngIf ="imagecategorie">
+    <img src={{imagecategorie}} width="100" height="50"/>
+    </div>
+</div>
+    <div class="action">
+    <button class="btn btn-primary save" (click)="savecategorie()" >Enregistrer</button>
+    <button class="btn btn-danger cancel"(click)="closeForm()" >Annuler</button>
+    </div>
+    </div>
+</div>
+</div>
+ 
