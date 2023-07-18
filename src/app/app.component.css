@@ -1,0 +1,62 @@
+/* CSS pour la barre de navigation */
+.navbar {
+  background-color: #343a40; /* Couleur de fond */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+.navbar-brand {
+  color: #fff; /* Couleur du texte */
+  font-size: 1.8rem; /* Taille du texte */
+  font-weight: bold; /* Gras */
+}
+
+.navbar-nav .nav-link {
+  color: #fff; /* Couleur du texte */
+  font-size: 1.1rem; /* Taille du texte */
+  padding: 0.5rem 1.2rem; /* Espacement interne */
+  transition: background-color 0.3s ease; /* Transition au survol */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #6c757d; /* Couleur de fond au survol */
+  border-radius: 4px; /* Coins arrondis au survol */
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #212529; /* Couleur de fond de l'élément actif */
+}
+
+.navbar-toggler {
+  border: none; /* Suppression de la bordure du bouton de bascule */
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Suppression de la mise en évidence du focus */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Couleur de l'icône du bouton de bascule */
+  width: 20px; /* Largeur de l'icône du bouton de bascule */
+  height: 3px; /* Hauteur de l'icône du bouton de bascule */
+  transition: background-color 0.3s ease; /* Transition au survol */
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #6c757d; /* Couleur de l'icône du bouton de bascule au survol */
+}
+
+.form-control {
+  width: 200px; /* Largeur du champ de recherche */
+  border-color: #6c757d; /* Couleur de la bordure du champ de recherche */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Couleur du bouton "Search" */
+  border-color: #6c757d; /* Couleur de la bordure du bouton "Search" */
+  font-size: 1rem; /* Taille du texte */
+  transition: background-color 0.3s ease; /* Transition au survol */
+}
+
+.btn-secondary:hover {
+  background-color: #495057; /* Couleur du bouton "Search" au survol */
+}

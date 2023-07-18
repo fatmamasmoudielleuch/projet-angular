@@ -11,7 +11,7 @@
     z-index: 100;
     }
     .mobile-form{
-    
+
     background-color: white;
     width: 600px;
     padding: 20px 50px;
@@ -35,3 +35,93 @@
     .form-control{
     width: 90%;
     }
+    /* scategorie.component.css */
+
+.form-wrapper {
+  margin-top: 20px;
+}
+
+.mobile-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.mobile-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+.group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.action {
+  text-align: center;
+}
+
+.action button {
+  margin-right: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f7f7f7;
+  color: #333;
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.btn-outline-danger {
+  background-color: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}

@@ -9,7 +9,7 @@
         <option *ngFor="let c of scategories">{{c.nomscategorie}}</option>
         </select>
         </div>
-        
+
     <table class="table">
        <thead>
         <tr>
@@ -31,9 +31,9 @@
            <td>{{art.prix}}</td>
            <td>{{art.qtestock}}</td>
            <td>{{art.reference}}</td>
-       
-      
-   
+
+
+
        <td><button class="btn btn-outline-primary" (click)=" EditForm(art)">Edit</button></td>
        <td> <button class="btn btn-outline-danger"(click)="deletearticles(art._id)">Delete</button></td>
        <td></td>
@@ -45,7 +45,7 @@
 
 <div>
     <div class="form-wrapper" *ngIf="showForm">
-        <div class="mobile-form">        
+        <div class="mobile-form">
     <h2 class="text-center text-info">{{formHeader}}</h2>
     <div class="group">
     <label for="">designation</label>
@@ -69,7 +69,7 @@
         <label for="">prix</label>
         <input type="text" class="form-control" [(ngModel)]="prix"
         name="prix">
-        </div> 
+        </div>
           <div class="group">
             <label for="">qtestock</label>
             <input type="text" class="form-control" [(ngModel)]="qtestock"
@@ -82,7 +82,7 @@
                 </div>
                 <div class="group">
                     <label for="">scategorieID</label>
-                    
+
                        <select name="scategorieID" class="form-control" placeholder="Sous categorie" id="scategorie"
                      [(ngModel)]="scategorieID">
                     <option *ngfor ="let d of scategories" value="{{d._id}}">
@@ -98,5 +98,5 @@
     </div>
 </div>
 
- 
+
 
